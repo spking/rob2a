@@ -1,5 +1,18 @@
-Motors
-2 LeftMotor
-3 RightMotor
-
-analog
+#pragma config(Sensor, in1,    Gyro,           sensorGyro)
+#pragma config(Sensor, in2,    Light,          sensorReflection)
+#pragma config(Sensor, in3,    TapSensor,      sensorAnalog)
+#pragma config(Sensor, in4,    Potent,         sensorPotentiometer)
+#pragma config(Sensor, in5,    Lineright,      sensorLineFollower)
+#pragma config(Sensor, in6,    Linemid,        sensorLineFollower)
+#pragma config(Sensor, in7,    Lineleft,       sensorLineFollower)
+#pragma config(Sensor, dgtl1,  encoRS,         sensorRotation)
+#pragma config(Sensor, dgtl2,  encoRS2,        sensorRotation)
+#pragma config(Sensor, dgtl7,  encoRS,         sensorRotation)
+#pragma config(Sensor, dgtl8,  encoRS2,        sensorRotation)
+#pragma config(Sensor, dgtl9,  encoLS,         sensorRotation)
+#pragma config(Sensor, dgtl10, encoLS2,        sensorRotation)
+#pragma config(Sensor, dgtl11, SonarIN,        sensorSONAR_raw)
+#pragma config(Motor,  port1,           rightMotor,    tmotorVex393, openLoop)
+#pragma config(Motor,  port2,           Claw,          tmotorVex393, openLoop)
+#pragma config(Motor,  port9,           Arm,           tmotorVex269, openLoop)
+#pragma config(Motor,  port10,          leftMotor,     tmotorVex393, openLoop, reversed)
